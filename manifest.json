@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Selection Highlighter",
-  "version": "2.37",
-  "description": "Highlight occurrences of selected text, with or without a keypress.",
+  "name": "BetterWriter.ai",
+  "version": "0.1",
+  "description": "Select text and generate alternative suggestions.",
   "options_page": "options_page/options_page.html",
   "content_scripts": [{
     "run_at": "document_end",
