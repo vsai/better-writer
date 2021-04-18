@@ -99,7 +99,7 @@ const options = {
     return selectionString.length >= 6 && selection.type !== 'None' && selection.type !== 'Caret';
   },
   isWindowLocationValid: function (windowLocation) {
-    const blacklistedHosts = ['linkedin.com', 'collabedit.com', 'coderpad.io', 'jsbin.com', 'plnkr.co', 'youtube.com'];
+    const blacklistedHosts = [];
     return !blacklistedHosts.some(h => windowLocation.host.includes(h));
   },
   areKeysPressed: function (pressedKeys = []) {
