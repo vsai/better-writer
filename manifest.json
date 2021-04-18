@@ -3,7 +3,6 @@
   "name": "BetterWriter.ai",
   "version": "0.1",
   "description": "Select text and generate alternative suggestions.",
-  // "options_page": "options_page/options_page.html",
   "background": {
     "service_worker": "background.js"
   },

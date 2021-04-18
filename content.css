@@ -3,16 +3,28 @@
   bottom: 1em;
   right: 1em;
   max-width: 300px;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  /*box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);*/
   z-index: 100;
   font-size: normal;
   font-weight: normal;
+  max-height: 70vh;
+  overflow-y: scroll;
 }
 button.site-direct {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   background-color: rgb(26,24,54);
   padding: 8px;
   outline: none !important;
   color: white;
   border: none;
+}
+.suggestion {
+  border: 2px solid rgb(26,24,54);
+  margin-bottom: 8px;
+  padding: 8px;
+  background: rgba(255,255,255,0.8);
+}
+.suggestion p {
+  margin-top: 0;
+  margin-bottom: 4px;
 }
