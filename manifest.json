@@ -1,21 +1,29 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "BetterWriter.ai",
   "version": "0.1",
   "description": "Select text and generate alternative suggestions.",
-  "options_page": "options_page/options_page.html",
+  // "options_page": "options_page/options_page.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "assets/icon.png"
+    }
+  },
   "content_scripts": [{
     "run_at": "document_end",
     "matches": ["<all_urls>"],
-    "js": ["highlighter/highlighter.js"]
+    "js": ["content.js"],
+    "css": ["content.css"]
   }],
-  "browser_action": {
-    "default_icon": "assets/icon.png"
-  },
   "icons": {
     "128": "assets/icon.png"
   },
   "permissions": [
+    "contextMenus",
     "activeTab",
     "storage"
   ]

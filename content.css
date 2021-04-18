@@ -1,0 +1,18 @@
+#better-writer {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  max-width: 300px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  z-index: 100;
+  font-size: normal;
+  font-weight: normal;
+}
+button.site-direct {
+  margin-bottom: 16px;
+  background-color: rgb(26,24,54);
+  padding: 8px;
+  outline: none !important;
+  color: white;
+  border: none;
+}
